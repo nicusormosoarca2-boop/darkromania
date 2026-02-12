@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Romania Roleplay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1608889175123-8ee3625082a5?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            position: relative;
+            color: white;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.65);
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            z-index: 2;
+        }
+
+        .logo {
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff2c2c;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 80px;
+            max-width: 700px;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .blue { color: #0057ff; }
+        .yellow { color: #ffe600; }
+        .red { color: #ff2c2c; }
+
+        p {
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+        }
+
+        form textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        button {
+            background: #0057ff;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #003ecb;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Dark Romania Roleplay</div>
+    <nav>
+        <a href="#">Pagina Principala</a>
+        <a href="#">Despre Noi</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>
+        <span class="blue">DARK</span>
+        <span class="yellow">ROMANIA</span>
+        <span class="red">ROLEPLAY</span>
+    </h1>
+
+    <p>Daca doresti sa ne lasi un mesaj poti lasa mai jos</p>
+
+    <form>
+        <input type="text" placeholder="Nume" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Mesaj" required></textarea>
+        <button type="submit">Trimite</button>
+    </form>
+</div>
+
+</body>
+</html>
